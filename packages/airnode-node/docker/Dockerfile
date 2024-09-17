@@ -18,7 +18,7 @@ COPY entrypoint.sh /entrypoint.sh
 RUN apk add --update --no-cache tini dos2unix && \
     # Install airnode-node
     npm set registry ${npmRegistryUrl} && \
-    yarn global add ${packageName}@${npmTag} && \
+    yarn global add ${packageName}@${npmTag} --ignore-engines && \
     ln -s /usr/local/share/.config/yarn/global/node_modules/${packageName}/dist ${appDir} && \
     # Create user
     adduser -h ${appDir} -s /bin/false -S -D -H ${name} && \

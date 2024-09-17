@@ -22,7 +22,7 @@ RUN ARCH=`[ $(arch) == "x86_64" ] && echo "amd64" || echo "arm64" ` && \
     rm -rf *.zip && \
     # Install airnode-deployer
     npm set registry ${npmRegistryUrl} && \
-    yarn global add ${packageName}@${npmTag} && \
+    yarn global add ${packageName}@${npmTag} --ignore-engines && \
     ln -s /usr/local/share/.config/yarn/global/node_modules/${packageName}/dist ${appDir} && \
     # Create user
     adduser -h ${appDir} -s /bin/false -S -D -H ${name} && \

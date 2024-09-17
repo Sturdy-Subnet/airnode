@@ -39,7 +39,7 @@ module "run" {
   entry_point           = "run"
   source_dir            = var.handler_dir
   memory_size           = 1024
-  timeout               = 30
+  timeout               = 90
   configuration_file    = var.configuration_file
   secrets_file          = var.secrets_file
   region                = var.gcp_region
@@ -63,7 +63,7 @@ module "startCoordinator" {
   entry_point        = "startCoordinator"
   source_dir         = var.handler_dir
   memory_size        = 512
-  timeout            = 65
+  timeout            = 125
   configuration_file = var.configuration_file
   secrets_file       = var.secrets_file
   region             = var.gcp_region
@@ -122,7 +122,7 @@ module "httpReq" {
   entry_point           = "httpReq"
   source_dir            = var.handler_dir
   memory_size           = 128
-  timeout               = 30
+  timeout               = 90
   configuration_file    = var.configuration_file
   secrets_file          = var.secrets_file
   region                = var.gcp_region
@@ -169,7 +169,7 @@ module "httpSignedReq" {
   entry_point           = "httpSignedReq"
   source_dir            = var.handler_dir
   memory_size           = 128
-  timeout               = 30
+  timeout               = 90
   configuration_file    = var.configuration_file
   secrets_file          = var.secrets_file
   region                = var.gcp_region
@@ -219,7 +219,7 @@ module "signOevReq" {
   entry_point           = "signOevReq"
   source_dir            = var.handler_dir
   memory_size           = 256
-  timeout               = 30
+  timeout               = 90
   configuration_file    = var.configuration_file
   secrets_file          = var.secrets_file
   region                = var.gcp_region
