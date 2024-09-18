@@ -22,7 +22,7 @@ export const BLOCKCHAIN_CALL_ATTEMPT_TIMEOUT = 5_000;
 export const EVM_PROVIDER_TIMEOUT = 10_000;
 
 // The maximum amount of time the "initialize provider" worker is allowed before being timed out
-export const WORKER_PROVIDER_INITIALIZATION_TIMEOUT = 20_000;
+export const WORKER_PROVIDER_INITIALIZATION_TIMEOUT = 30_000;
 
 // The maximum amount of time the "process transactions" worker is allowed before being timed out
 export const WORKER_PROCESS_TRANSACTIONS_TIMEOUT = 10_000;
@@ -34,4 +34,4 @@ export const WORKER_CALL_API_TIMEOUT = 120_000;
 export const MAXIMUM_ONCHAIN_ERROR_LENGTH = 100;
 
 // The maximum amount of time in milliseconds that pre and post processing is allowed to execute
-export const PROCESSING_TIMEOUT = 10_000;
+export const PROCESSING_TIMEOUT = 40_000;

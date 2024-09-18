@@ -20,6 +20,7 @@ paths:
       x-google-backend:
         address: https://${region}-${project}.cloudfunctions.net/${cloud_function_name}
         path_translation: CONSTANT_ADDRESS
+        deadline: 60.0
     options:
       operationId: corsTestEndpoint
       consumes:
@@ -32,3 +33,4 @@ paths:
       x-google-backend:
         address: https://${region}-${project}.cloudfunctions.net/${cloud_function_name}
         path_translation: CONSTANT_ADDRESS
+        deadline: 60.0
