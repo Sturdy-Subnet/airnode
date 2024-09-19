@@ -1,8 +1,8 @@
 // The maximum time a single API call has before it is timed out
-export const FIRST_API_CALL_TIMEOUT = 60_000;
+export const FIRST_API_CALL_TIMEOUT = 105_000;
 
 // The maximum time a single API call has before it is timed out in the second attempt
-export const SECOND_API_CALL_TIMEOUT = 60_000;
+export const SECOND_API_CALL_TIMEOUT = 105_000;
 
 // The number of past blocks to lookup when fetching Airnode RRP events.
 export const BLOCK_COUNT_HISTORY_LIMIT = 300;
@@ -28,7 +28,7 @@ export const WORKER_PROVIDER_INITIALIZATION_TIMEOUT = 30_000;
 export const WORKER_PROCESS_TRANSACTIONS_TIMEOUT = 10_000;
 
 // The maximum amount of time the "call API" worker is allowed before being timed out
-export const WORKER_CALL_API_TIMEOUT = 120_000;
+export const WORKER_CALL_API_TIMEOUT = 210_000;
 
 // The maximum character length of an error message sent on-chain
 export const MAXIMUM_ONCHAIN_ERROR_LENGTH = 100;
